@@ -5,8 +5,8 @@ describe('Module pattern', () => {
   it('handle private values', () => {
     const appModule = getAppModule()
 
-    expect(appModule.initialize).toBeDefined()
-    expect(appModule.getActiveItemData).toBeUndefined()
-    expect(appModule.setActiveName).toBeUndefined()
+    expect(appModule.initialize).toBeUndefined()
+    expect(appModule.getActiveItemData).toBeDefined()
+    expect(appModule.setActiveName).toBeDefined()
   })
 })

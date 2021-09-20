@@ -6,10 +6,10 @@ describe('Single responsability principle', () => {
     const todoList = new TodoList()
     const todoListService = new TodoListService()
 
-    expect(todoList.save).toBeUndefined()
-    expect(todoList.load).toBeUndefined()
-    expect(todoListService.save).toBeDefined()
-    expect(todoListService.load).toBeDefined()
+    expect(todoList.save).toBeDefined()
+    expect(todoList.load).toBeDefined()
+    expect(todoListService.save).toBeUndefined()
+    expect(todoListService.load).toBeUndefined()
   })
 
 })
