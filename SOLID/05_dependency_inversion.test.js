@@ -10,8 +10,8 @@ describe('Dependency Inversion principle', () => {
 
     purchaseHandler.processPayment({ id: '226746a33d0dfg', currency: 'USD' }, 1000)
 
-    expect(PayPalService.requestPayment).not.toHaveBeenCalled()
-    expect(PaymentHandler.requestPayment).toHaveBeenCalled()
+    expect(PayPalService.requestPayment).toHaveBeenCalled()
+    expect(PaymentHandler.requestPayment).not.toHaveBeenCalled()
   })
 
 })

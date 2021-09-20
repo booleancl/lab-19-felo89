@@ -7,13 +7,15 @@ class Phone {
   constructor() {}
 
   phoneCall(number) {}
+}
 
+class SmartPhone extends Phone {
   takePhoto() {}
-
+  
   connectToWifi() {}
 }
 
-class IPhone extends Phone {}
+class IPhone extends SmartPhone {}
 
 class Nokia3310 extends Phone {}
 
